@@ -1,7 +1,8 @@
 {
   "name": "interactive-portfolio-website",
-  "version": "0.1.0",
   "private": true,
+  "homepage": "https://Rishabh7973.github.io/portfolio07",
+  "version": "0.1.0",
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.3",
     "@radix-ui/react-alert-dialog": "^1.1.6",
@@ -50,13 +51,16 @@
   "devDependencies": {
     "@types/node": "^20.10.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "gh-pages": "^6.3.0",
     "rollup": "^4.18.0",
     "vite": "^5.3.5"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
   "engines": {
     "node": "22.x"
